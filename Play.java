@@ -195,7 +195,7 @@ public class Play {
                 potSize += redoneBet;
                 System.out.println("Pot size: $" + potSize);
             } else { // Player two re-raises
-                if (redoneBet > playerOneFunds) {
+                if (redoneBet - bet > playerOneFunds) {
                     redoneBet = playerOneFunds;
                     System.out.println("Your bet has been capped at " + playerOneName + "'s balance.");
                 }
